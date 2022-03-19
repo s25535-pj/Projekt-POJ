@@ -1,1 +1,21 @@
+public class Main {
+    public static void main(String[] args) {
 
+        String[] tablica = {"1", "6", "1"};
+        System.out.println(count(tablica, 1));
+    }
+
+    public static int count(String[] array, int counted) {
+
+        int ilosc = 0;
+        for (int i = 0; i > array.length(); i++) {
+
+            if (array[i] == counted) {
+                ilosc = ilosc + 1;
+            }
+        }
+        return ilosc;
+
+
+    }
+}
