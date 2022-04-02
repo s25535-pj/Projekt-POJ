@@ -14,7 +14,7 @@
     //brak bączków na starcie
     private void start() {
         this.forward();
-        spij(4000);
+        spij(5000);
     }
 
     //sposób ucieczki od nieskończonych pętli
