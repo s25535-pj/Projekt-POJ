@@ -1,0 +1,38 @@
+public class Prostokat {
+
+    double bok1;
+    double bok2;
+
+    public Prostokat(double bok1, double bok2) {
+        this.bok1 = bok1;
+        this.bok2 = bok2;
+
+    }
+
+    public double przekatna() {
+        return (Math.sqrt((this.bok1 * this.bok1) + (this.bok2 * this.bok2)));
+    }
+
+    public double przekatna(double wartosc) {
+        return (Math.sqrt((bok1 * bok1) + (bok2 * bok2)) * wartosc);
+    }
+    public double przekatna(int wartosc) {
+
+        return (int)(Math.sqrt((bok1 * bok1) + (bok2 * bok2)) * wartosc);
+    }
+
+    @Override
+    public  boolean equals(Object o) {
+
+        boolean a = false;
+        Prostokat p = (Prostokat) o;
+        if (o != this) {
+            a = true;
+        }
+        if (o == this) {
+            a = false;
+        }
+        return a;
+    }
+
+}
