@@ -36,7 +36,7 @@ public class Prostokat implements MoznaWyznaczycWielokrotnoscPrzekatnej, MoznaWy
 
     @Override
     public double wysokosc() {
-        return (podstawa()*bok())/2;
+        return bok;
     }
 
     @Override
