@@ -8,8 +8,8 @@ public class Prostokat implements MoznaWyznaczycWielokrotnoscPrzekatnej, MoznaWy
     int podstawa;
 
     public Prostokat(int i, int i1) {
-        this.bok = i;
-        this.podstawa = i1;
+        this.bok = i1;
+        this.podstawa = i;
 
     }
 
@@ -57,7 +57,9 @@ public class Prostokat implements MoznaWyznaczycWielokrotnoscPrzekatnej, MoznaWy
         //System.out.println("Kat nachylenia this: " + this.katNachylenia());
         //System.out.println(("Kąt nachylenia figura: " + figura.katNachylenia()));
         //System.out.println("=======================================");
-        return bok == figura.bok() && podstawa == figura.podstawa() && this.katNachylenia() == figura.katNachylenia();
+        return ((bok == figura.bok() && podstawa == figura.podstawa()) ||
+                (bok == figura.podstawa() && podstawa == figura.bok())) &&
+                this.katNachylenia() == figura.katNachylenia();
     }
 
     @Override
